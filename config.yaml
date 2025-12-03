@@ -1,0 +1,109 @@
+# ================================
+# AI CLIPPER CONFIG (RTX 2050)
+# ================================
+
+paths:
+  output_dir: "./output"
+  temp_dir: "./temp"
+  models_dir: "./models"
+  logs_dir: "./logs"
+
+# ================================
+# SPEECH TO TEXT (FASTER WHISPER)
+# ================================
+transcription:
+  model_size: "large-v3"
+  device: "cuda"
+  compute_type: "float16"
+  beam_size: 5
+  language: "auto"
+  vad_filter: true
+
+# ================================
+# AI ANALYSIS / SCORING
+# ================================
+ai_analysis:
+  llm_provider: "ollama"
+  model: "llama3.1:8b"
+  endpoint: "http://localhost:11434"
+  temperature: 0.3
+  top_n_clips: 5
+  min_clip_duration: 25
+  max_clip_duration: 60
+  virality_weight: 0.6
+  clarity_weight: 0.2
+  emotion_weight: 0.2
+
+# ================================
+# CLIP GENERATION
+# ================================
+clip_settings:
+  aspect_ratio: "9:16"
+  resolution: "1080x1920"
+  padding_top: 160
+  padding_bottom: 300
+  fade_in: 0.25
+  fade_out: 0.25
+
+# ================================
+# SUBTITLES STYLE
+# ================================
+subtitles:
+  enabled: true
+  font: "Arial Black"
+  font_size: 48
+  position: "bottom"
+  color: "white"
+  stroke_color: "black"
+  stroke_width: 3
+  background_opacity: 0.0
+  highlight_keywords: true
+
+# ================================
+# CONTENT GENERATION
+# ================================
+content_generation:
+  title_max_length: 80
+  caption_max_length: 150
+  hashtags_count: 15
+  style: "viral"
+  language: "auto"
+
+# ================================
+# EXPORT
+# ================================
+export:
+  formats:
+    - "shorts"
+    - "youtube"
+
+shorts:
+  width: 1080
+  height: 1920
+  codec: "h264"
+  fps: 30
+  preset: "fast"
+
+youtube:
+  width: 1920
+  height: 1080
+  codec: "h264"
+  fps: 30
+  preset: "slow"
+
+# ================================
+# UPLOAD (NANTI BISA DIISI)
+# ================================
+upload:
+  youtube:
+    enabled: false
+    category_id: 22
+    privacy: "private"
+
+  tiktok:
+    enabled: false
+    privacy: "PUBLIC"
+
+  instagram:
+    enabled: false
+    location_id: ""
