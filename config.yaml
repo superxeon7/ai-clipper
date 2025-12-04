@@ -1,109 +1,128 @@
 # ================================
-# AI CLIPPER CONFIG (RTX 2050)
+# AI CLIPPER CONFIG (FIXED)
 # ================================
 
-paths:
-  output_dir: "./output"
+# ================================
+# PATHS
+# ================================
+output:
+  base_dir: "./output"
   temp_dir: "./temp"
   models_dir: "./models"
   logs_dir: "./logs"
 
 # ================================
+# LOGGING
+# ================================
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "./logs/ai_clipper.log"
+  console_output: true
+
+# ================================
+# VIDEO SETTINGS
+# ================================
+video:
+  supported_formats: ["mp4", "mov", "avi", "mkv", "webm"]
+  min_duration_minutes: 10
+  max_duration_minutes: 180
+  audio_channels: 1
+  audio_sample_rate: 16000
+
+# ================================
 # SPEECH TO TEXT (FASTER WHISPER)
 # ================================
 transcription:
-  model_size: "large-v3"
-  device: "cuda"
-  compute_type: "float16"
+  model_size: "tiny"  # Options: tiny, base, small, medium, large-v3
+  device: "cpu"  # "cuda" for GPU, "cpu" for CPU
+  compute_type: "int8"  # float16 for GPU, int8 for CPU
   beam_size: 5
-  language: "auto"
+  language: "auto"  # or "en", "id", etc.
   vad_filter: true
+  word_timestamps: true
 
 # ================================
 # AI ANALYSIS / SCORING
 # ================================
 ai_analysis:
-  llm_provider: "ollama"
-  model: "llama3.1:8b"
-  endpoint: "http://localhost:11434"
+  # Ollama settings
+  ollama_host: "http://localhost:11434"
+  llm_model: "llama3.1:8b"
+  embedding_model: "all-MiniLM-L6-v2"
   temperature: 0.3
+  
+  # Clip selection
   top_n_clips: 5
   min_clip_duration: 25
   max_clip_duration: 60
-  virality_weight: 0.6
-  clarity_weight: 0.2
-  emotion_weight: 0.2
+  overlap_seconds: 5
+  
+  # Scoring weights
+  weights:
+    virality: 0.35
+    emotion: 0.20
+    hook: 0.25
+    completeness: 0.15
+    standalone: 0.05
 
 # ================================
-# CLIP GENERATION
+# VIDEO EDITING
 # ================================
-clip_settings:
-  aspect_ratio: "9:16"
-  resolution: "1080x1920"
-  padding_top: 160
-  padding_bottom: 300
-  fade_in: 0.25
-  fade_out: 0.25
-
-# ================================
-# SUBTITLES STYLE
-# ================================
-subtitles:
-  enabled: true
-  font: "Arial Black"
-  font_size: 48
-  position: "bottom"
-  color: "white"
-  stroke_color: "black"
-  stroke_width: 3
-  background_opacity: 0.0
-  highlight_keywords: true
+video_editing:
+  # Output formats
+  output_formats:
+    - name: "shorts"
+      width: 1080
+      height: 1920
+      codec: "h264"
+      fps: 30
+      preset: "fast"
+    
+    - name: "youtube"
+      width: 1920
+      height: 1080
+      codec: "h264"
+      fps: 30
+      preset: "medium"
+  
+  # Audio settings
+  audio_normalization: true
+  target_audio_level: -16
+  
+  # Subtitle style
+  subtitle_style:
+    font: "Arial-Bold"
+    fontsize: 48
+    fontcolor: "white"
+    bordercolor: "black"
+    borderw: 3
+    position: "bottom"
 
 # ================================
 # CONTENT GENERATION
 # ================================
 content_generation:
-  title_max_length: 80
-  caption_max_length: 150
-  hashtags_count: 15
+  temperature: 0.7
+  max_title_length: 80
+  max_caption_length: 150
+  max_description_length: 500
+  num_hashtags: 15
   style: "viral"
   language: "auto"
 
 # ================================
-# EXPORT
-# ================================
-export:
-  formats:
-    - "shorts"
-    - "youtube"
-
-shorts:
-  width: 1080
-  height: 1920
-  codec: "h264"
-  fps: 30
-  preset: "fast"
-
-youtube:
-  width: 1920
-  height: 1080
-  codec: "h264"
-  fps: 30
-  preset: "slow"
-
-# ================================
-# UPLOAD (NANTI BISA DIISI)
+# UPLOAD SETTINGS
 # ================================
 upload:
   youtube:
     enabled: false
-    category_id: 22
-    privacy: "private"
-
+    category_id: 22  # People & Blogs
+    privacy: "private"  # public, unlisted, private
+  
   tiktok:
     enabled: false
-    privacy: "PUBLIC"
-
+    privacy: "PUBLIC"  # PUBLIC, PRIVATE, FRIENDS
+  
   instagram:
     enabled: false
     location_id: ""

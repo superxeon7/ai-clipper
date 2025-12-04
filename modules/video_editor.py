@@ -32,7 +32,7 @@ class VideoEditor:
             duration = end_time - start_time
             clip_paths = {}
             
-            # Create each output format
+            # Create each output format separately
             for format_config in self.config['video_editing']['output_formats']:
                 format_name = format_config['name']
                 width = format_config['width']
@@ -41,7 +41,7 @@ class VideoEditor:
                 output_filename = f"clip_{clip_index:02d}_{format_name}_raw.mp4"
                 output_path = os.path.join(output_dir, output_filename)
                 
-                # Cut and resize
+                # Cut and resize (each format separately)
                 self._cut_and_resize(
                     video_path, 
                     start_time, 
@@ -70,51 +70,60 @@ class VideoEditor:
             input_width = int(video_info['width'])
             input_height = int(video_info['height'])
             
-            # Calculate scaling
+            # Calculate aspect ratios
             input_ratio = input_width / input_height
             target_ratio = target_width / target_height
             
+            # Build ffmpeg command
+            input_stream = ffmpeg.input(input_path, ss=start_time, t=duration)
+            
+            # Scale and crop logic
             if abs(input_ratio - target_ratio) < 0.01:
                 # Same ratio, just scale
-                scale_filter = f"scale={target_width}:{target_height}"
+                video = input_stream.video.filter('scale', target_width, target_height)
             elif input_ratio > target_ratio:
                 # Input is wider, crop width
                 scale_height = target_height
                 scale_width = int(scale_height * input_ratio)
-                crop_width = target_width
-                crop_x = (scale_width - crop_width) // 2
-                scale_filter = f"scale={scale_width}:{scale_height},crop={crop_width}:{scale_height}:{crop_x}:0"
+                crop_x = (scale_width - target_width) // 2
+                
+                video = input_stream.video
+                video = video.filter('scale', scale_width, scale_height)
+                video = video.filter('crop', target_width, target_height, crop_x, 0)
             else:
                 # Input is taller, crop height
                 scale_width = target_width
                 scale_height = int(scale_width / input_ratio)
-                crop_height = target_height
-                crop_y = (scale_height - crop_height) // 2
-                scale_filter = f"scale={scale_width}:{scale_height},crop={scale_width}:{crop_height}:0:{crop_y}"
+                crop_y = (scale_height - target_height) // 2
+                
+                video = input_stream.video
+                video = video.filter('scale', scale_width, scale_height)
+                video = video.filter('crop', target_width, target_height, 0, crop_y)
             
-            # Build ffmpeg command
-            stream = ffmpeg.input(input_path, ss=start_time, t=duration)
+            # Set FPS
+            video = video.filter('fps', fps=30)
             
-            # Apply video filters
-            stream = ffmpeg.filter(stream.video, 'fps', fps=30)
-            for filter_str in scale_filter.split(','):
-                if 'scale' in filter_str:
-                    w, h = filter_str.replace('scale=', '').split(':')
-                    stream = ffmpeg.filter(stream, 'scale', w, h)
-                elif 'crop' in filter_str:
-                    parts = filter_str.replace('crop=', '').split(':')
-                    stream = ffmpeg.filter(stream, 'crop', parts[0], parts[1], parts[2], parts[3])
+            # Handle audio
+            audio = input_stream.audio
             
             # Audio normalization if enabled
-            if self.config['video_editing']['audio_normalization']:
-                audio = stream.audio
-                target_level = self.config['video_editing']['target_audio_level']
-                audio = ffmpeg.filter(audio, 'loudnorm', I=target_level, TP=-1.5, LRA=11)
-                stream = ffmpeg.output(stream, audio, output_path, vcodec='libx264', acodec='aac')
-            else:
-                stream = ffmpeg.output(stream, output_path, vcodec='libx264', acodec='aac')
+            if self.config['video_editing'].get('audio_normalization', False):
+                target_level = self.config['video_editing'].get('target_audio_level', -16)
+                audio = audio.filter('loudnorm', I=target_level, TP=-1.5, LRA=11)
             
-            ffmpeg.run(stream, overwrite_output=True, quiet=True)
+            # Output
+            output = ffmpeg.output(
+                video, 
+                audio, 
+                output_path,
+                vcodec='libx264',
+                acodec='aac',
+                preset='medium',
+                crf=23
+            )
+            
+            # Run
+            ffmpeg.run(output, overwrite_output=True, quiet=True)
             
         except Exception as e:
             self.logger.error(f"Error in cut_and_resize: {str(e)}")
@@ -140,22 +149,11 @@ class VideoEditor:
             # Get subtitle style config
             style = self.config['video_editing']['subtitle_style']
             
-            # Build subtitle filter
-            subtitle_filter = (
-                f"subtitles={srt_path}:force_style='"
-                f"FontName={style['font']},"
-                f"FontSize={style['fontsize']},"
-                f"PrimaryColour=&H{self._color_to_hex(style['fontcolor'])},"
-                f"OutlineColour=&H{self._color_to_hex(style['bordercolor'])},"
-                f"BorderStyle=1,"
-                f"Outline={style['borderw']},"
-                f"Alignment=2"  # Bottom center
-                f"'"
-            )
+            # Fix path for Windows (escape backslashes and colons)
+            srt_path_escaped = srt_path.replace('\\', '/').replace(':', '\\\\:')
             
-            # Apply filter
-            stream = ffmpeg.input(video_path)
-            stream = ffmpeg.filter(stream, 'subtitles', srt_path, force_style=(
+            # Build subtitle filter with style
+            subtitle_style = (
                 f"FontName={style['font']},"
                 f"FontSize={style['fontsize']},"
                 f"PrimaryColour=&HFFFFFF,"
@@ -163,10 +161,33 @@ class VideoEditor:
                 f"BorderStyle=1,"
                 f"Outline={style['borderw']},"
                 f"Alignment=2"
-            ))
-            stream = ffmpeg.output(stream, output_path, vcodec='libx264', acodec='copy')
+            )
             
-            ffmpeg.run(stream, overwrite_output=True, quiet=True)
+            # Build ffmpeg command
+            input_stream = ffmpeg.input(video_path)
+            
+            # Apply subtitle filter
+            video = input_stream.video.filter(
+                'subtitles', 
+                srt_path_escaped,
+                force_style=subtitle_style
+            )
+            
+            # Copy audio
+            audio = input_stream.audio
+            
+            # Output
+            output = ffmpeg.output(
+                video,
+                audio,
+                output_path,
+                vcodec='libx264',
+                acodec='copy',
+                preset='medium'
+            )
+            
+            # Run
+            ffmpeg.run(output, overwrite_output=True, quiet=True)
             
             self.logger.info(f"Subtitles burned: {output_path}")
             return output_path

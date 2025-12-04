@@ -35,4 +35,4 @@ def validate_input_video(video_path: str, config: dict, logger):
     if file_size < 1024 * 1024:
         raise ValueError(f"Video file too small: {file_size} bytes")
     
-    logger.info("✓ Video validation passed")
+    logger.info("[OK] Video validation passed")  # Changed from ✓ to [OK]
