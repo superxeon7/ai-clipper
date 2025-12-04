@@ -33,9 +33,9 @@ video:
 # SPEECH TO TEXT (FASTER WHISPER)
 # ================================
 transcription:
-  model_size: "tiny"  # Options: tiny, base, small, medium, large-v3
-  device: "cpu"  # "cuda" for GPU, "cpu" for CPU
-  compute_type: "int8"  # float16 for GPU, int8 for CPU
+  model_size: "large-v3"  # Options: tiny, base, small, medium, large-v3
+  device: "cuda"  # "cuda" for GPU, "cpu" for CPU
+  compute_type: "float16"  # float16 for GPU, int8 for CPU
   beam_size: 5
   language: "auto"  # or "en", "id", etc.
   vad_filter: true
