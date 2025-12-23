@@ -56,6 +56,7 @@ ai_analysis:
   min_clip_duration: 25
   max_clip_duration: 60
   overlap_seconds: 5
+  min_gap_between_clips: 10
   
   # Scoring weights
   weights:
@@ -126,3 +127,18 @@ upload:
   instagram:
     enabled: false
     location_id: ""
+
+# ==============================
+# SUBTITLE SETTINGS (NEW)
+# ================================
+subtitle:
+  style: "modern"
+  words_per_line: 3          # 2-3 words per line
+  highlight_color: "#9933FF" # Purple for active word
+  text_color: "#FFFFFF"      # White for inactive words
+  outline_color: "#000000"   # Black outline
+  font: "Arial Black"
+  fontsize: 58               # Larger for impact
+  outline_width: 4
+  position: "center"
+  animation: true

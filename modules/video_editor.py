@@ -128,7 +128,56 @@ class VideoEditor:
         except Exception as e:
             self.logger.error(f"Error in cut_and_resize: {str(e)}")
             raise
-    
+    def burn_subtitles_ass(self, video_path: str, ass_path: str, format_name: str) -> str:
+        """
+        Burn ASS subtitles into video (supports animations).
+        
+        Args:
+            video_path: Input video path
+            ass_path: Path to ASS file
+            format_name: Format name (for output naming)
+            
+        Returns:
+            Path to output video with burned subtitles
+        """
+        try:
+            output_path = video_path.replace('_raw.mp4', '_final.mp4')
+            
+            self.logger.info(f"Burning ASS subtitles: {ass_path}")
+            
+            # Fix path for Windows (escape special characters)
+            ass_path_escaped = ass_path.replace('\\', '/').replace(':', '\\:')
+            
+            # Build ffmpeg command
+            input_stream = ffmpeg.input(video_path)
+            
+            # Apply ASS subtitle filter
+            # ass filter supports full ASS styling and animations
+            video = input_stream.video.filter('ass', ass_path_escaped)
+            
+            # Copy audio
+            audio = input_stream.audio
+            
+            # Output
+            output = ffmpeg.output(
+                video,
+                audio,
+                output_path,
+                vcodec='libx264',
+                acodec='aac',
+                preset='medium',
+                crf=23
+            )
+            
+            # Run
+            ffmpeg.run(output, overwrite_output=True, quiet=True)
+            
+            self.logger.info(f"ASS subtitles burned: {output_path}")
+            return output_path
+            
+        except Exception as e:
+            self.logger.error(f"Error burning ASS subtitles: {str(e)}")
+            raise
     def burn_subtitles(self, video_path: str, srt_path: str, format_name: str) -> str:
         """
         Burn subtitles into video.

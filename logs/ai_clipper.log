@@ -368,3 +368,743 @@ ValueError: Encountered crop('1080', '1920', '1166', '0') <65bdc3cfcd34> with mu
 2025-12-04 06:22:01 - AIClipper - [32mINFO[0m - Output saved to: ./output\Tegar adityansyah (Penerus usaha keluarga yaitu Fibernet) (2)_20251204_053745
 2025-12-04 06:22:01 - AIClipper - [32mINFO[0m - Clips generated: 5
 2025-12-04 06:22:01 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 00:54:45 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 00:54:45 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 00:54:54 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 00:54:54 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_005503
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 00:55:03 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 00:55:05 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 00:55:05 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 00:55:05 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 01:07:28 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 01:07:28 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 01:07:33 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 01:07:33 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_010735
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 01:07:35 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 01:08:53 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 01:08:53 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 01:08:57 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 01:08:57 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_010859
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 01:08:59 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 01:09:00 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 01:09:00 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 01:09:00 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 01:37:57 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 01:37:57 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 01:38:01 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 01:38:01 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_013803
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 01:38:03 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 01:38:04 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 01:38:04 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 01:38:04 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 01:43:31 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 01:43:31 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 01:43:35 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 01:43:35 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_014337
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 01:43:37 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 01:43:38 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 01:43:38 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 01:43:38 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 02:00:53 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 02:00:53 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 02:00:57 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 02:00:57 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_020103
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 02:01:03 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 02:01:04 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 02:01:04 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 02:01:04 - AIClipper - [32mINFO[0m - Starting transcription...
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - CUDA Version: 11.8
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - GPU Count: 1
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - CUDA is available, using GPU
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 02:15:53 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 02:15:57 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 02:15:57 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 02:15:57 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 02:15:57 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_021600
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 02:16:00 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 02:16:00 - AIClipper - [31mERROR[0m - Error during transcription: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:16:00 - AIClipper - [31mERROR[0m - Error processing video: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\main.py", line 89, in process_video
+    transcript = self.transcriber.transcribe(audio_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\modules\transcriber.py", line 71, in transcribe
+    segments, info = self.model.transcribe(
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 942, in transcribe
+    ) = self.detect_language(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1819, in detect_language
+    encoder_output = self.encode(
+                     ^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1400, in encode
+    return self.model.encode(features, to_cpu=to_cpu)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - CUDA Version: 11.8
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - GPU Count: 1
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - CUDA is available, using GPU
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 02:17:23 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 02:17:27 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 02:17:27 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 02:17:27 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 02:17:27 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_021729
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 02:17:29 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 02:17:30 - AIClipper - [31mERROR[0m - Error during transcription: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:17:30 - AIClipper - [31mERROR[0m - Error processing video: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\main.py", line 89, in process_video
+    transcript = self.transcriber.transcribe(audio_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\modules\transcriber.py", line 71, in transcribe
+    segments, info = self.model.transcribe(
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 942, in transcribe
+    ) = self.detect_language(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1819, in detect_language
+    encoder_output = self.encode(
+                     ^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1400, in encode
+    return self.model.encode(features, to_cpu=to_cpu)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - CUDA Version: 11.8
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - cuDNN Version: 8700
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 02:22:35 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 02:22:39 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 02:22:39 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 02:22:39 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 02:22:39 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_022241
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 02:22:41 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 02:22:42 - AIClipper - [31mERROR[0m - Error during transcription: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:22:42 - AIClipper - [31mERROR[0m - Error processing video: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\main.py", line 89, in process_video
+    transcript = self.transcriber.transcribe(audio_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\modules\transcriber.py", line 71, in transcribe
+    segments, info = self.model.transcribe(
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 942, in transcribe
+    ) = self.detect_language(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1819, in detect_language
+    encoder_output = self.encode(
+                     ^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 1400, in encode
+    return self.model.encode(features, to_cpu=to_cpu)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cuDNN failed with status CUDNN_STATUS_NOT_INITIALIZED
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 02:34:18 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 02:34:21 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 02:34:21 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 02:34:21 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 02:34:21 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_023432
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 02:34:32 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Transcription complete: 30 segments
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Detected language: id (prob: 0.98)
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - JSON saved: ./output\saya_20251205_023432\transcript.json
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Transcript saved to: ./output\saya_20251205_023432\transcript.json
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Step 3/8: Analyzing content with AI...
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Generating candidate clips...
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Generated 27 candidate clips
+2025-12-05 02:38:08 - AIClipper - [32mINFO[0m - Scoring candidates with AI...
+2025-12-05 02:38:19 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232DCF2C3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:38:23 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232DCF2DD90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:38:27 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232DCF2FE90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:38:31 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232C7C0DE90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:38:31 - AIClipper - [32mINFO[0m - Scoring candidate 5/27...
+2025-12-05 02:38:36 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232C7C0FCD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:38:40 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232C7C0D490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 02:39:16 - AIClipper - [32mINFO[0m - Scoring candidate 10/27...
+2025-12-05 02:39:57 - AIClipper - [32mINFO[0m - Scoring candidate 15/27...
+2025-12-05 02:40:37 - AIClipper - [32mINFO[0m - Scoring candidate 20/27...
+2025-12-05 02:41:17 - AIClipper - [32mINFO[0m - Scoring candidate 25/27...
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Candidate scoring complete
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Step 4/8: Selecting best clips...
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selecting best clips...
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected clip: 124.0s - 174.7s (score: 78.8)
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected clip: 77.5s - 124.0s (score: 73.0)
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected clip: 174.7s - 231.6s (score: 54.9)
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected clip: 31.4s - 77.5s (score: 49.7)
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected 4 clips
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Selected 4 clips
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Step 5/8: Cutting and editing videos...
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Processing clip 1/4...
+2025-12-05 02:41:41 - AIClipper - [32mINFO[0m - Cutting clip 1: 124.0s - 174.7s
+2025-12-05 02:42:07 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_023432\clip_01_shorts_raw.mp4
+2025-12-05 02:42:27 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_023432\clip_01_youtube_raw.mp4
+2025-12-05 02:42:27 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_023432\clip_01.srt
+2025-12-05 02:42:27 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_01.srt
+2025-12-05 02:43:03 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_01_shorts_final.mp4
+2025-12-05 02:43:03 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_01.srt
+2025-12-05 02:43:34 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_01_youtube_final.mp4
+2025-12-05 02:43:34 - AIClipper - [32mINFO[0m - Processing clip 2/4...
+2025-12-05 02:43:34 - AIClipper - [32mINFO[0m - Cutting clip 2: 77.5s - 124.0s
+2025-12-05 02:43:56 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_023432\clip_02_shorts_raw.mp4
+2025-12-05 02:44:15 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_023432\clip_02_youtube_raw.mp4
+2025-12-05 02:44:15 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_023432\clip_02.srt
+2025-12-05 02:44:15 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_02.srt
+2025-12-05 02:44:49 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_02_shorts_final.mp4
+2025-12-05 02:44:49 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_02.srt
+2025-12-05 02:45:19 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_02_youtube_final.mp4
+2025-12-05 02:45:19 - AIClipper - [32mINFO[0m - Processing clip 3/4...
+2025-12-05 02:45:19 - AIClipper - [32mINFO[0m - Cutting clip 3: 174.7s - 231.6s
+2025-12-05 02:45:47 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_023432\clip_03_shorts_raw.mp4
+2025-12-05 02:46:57 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_023432\clip_03_youtube_raw.mp4
+2025-12-05 02:46:57 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_023432\clip_03.srt
+2025-12-05 02:46:57 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_03.srt
+2025-12-05 02:48:09 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_03_shorts_final.mp4
+2025-12-05 02:48:09 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_03.srt
+2025-12-05 02:49:03 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_03_youtube_final.mp4
+2025-12-05 02:49:03 - AIClipper - [32mINFO[0m - Processing clip 4/4...
+2025-12-05 02:49:03 - AIClipper - [32mINFO[0m - Cutting clip 4: 31.4s - 77.5s
+2025-12-05 02:50:11 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_023432\clip_04_shorts_raw.mp4
+2025-12-05 02:51:05 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_023432\clip_04_youtube_raw.mp4
+2025-12-05 02:51:05 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_023432\clip_04.srt
+2025-12-05 02:51:05 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_04.srt
+2025-12-05 02:52:01 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_04_shorts_final.mp4
+2025-12-05 02:52:01 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_023432\clip_04.srt
+2025-12-05 02:52:36 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_023432\clip_04_youtube_final.mp4
+2025-12-05 02:52:36 - AIClipper - [32mINFO[0m - Step 6/8: Generating captions, titles, and hashtags...
+2025-12-05 02:52:36 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 02:53:26 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 02:54:25 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 02:55:24 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 02:55:24 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - Step 7/8: Saving metadata...
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - Step 8/8: Preparing upload configurations...
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - Preparing upload configurations...
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - ✅ Upload configurations saved: ./output\saya_20251205_023432\upload_configs.json
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - PROCESSING COMPLETE!
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - Output saved to: ./output\saya_20251205_023432
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - Clips generated: 4
+2025-12-05 02:56:22 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 03:00:02 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 03:00:06 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 03:00:06 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 03:00:06 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 03:00:06 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_030009
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 03:00:09 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 03:00:09 - AIClipper - [31mERROR[0m - Error during transcription: VadOptions.__init__() got an unexpected keyword argument 'window_size_samples'
+2025-12-05 03:00:09 - AIClipper - [31mERROR[0m - Error processing video: VadOptions.__init__() got an unexpected keyword argument 'window_size_samples'
+Traceback (most recent call last):
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\main.py", line 89, in process_video
+    transcript = self.transcriber.transcribe(audio_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\OneDrive\Desktop\ai clipper\modules\transcriber.py", line 64, in transcribe
+    segments, info = self.model.transcribe(
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pongo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\faster_whisper\transcribe.py", line 889, in transcribe
+    vad_parameters = VadOptions(**vad_parameters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VadOptions.__init__() got an unexpected keyword argument 'window_size_samples'
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 03:01:20 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 03:01:24 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 03:01:24 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 03:01:24 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 03:01:24 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_030127
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 03:01:27 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Transcription complete: 34 segments
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Detected language: id (prob: 0.98)
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - JSON saved: ./output\saya_20251205_030127\transcript.json
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Transcript saved to: ./output\saya_20251205_030127\transcript.json
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Step 3/8: Analyzing content with AI...
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Generating candidate clips...
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Generated 26 candidate clips
+2025-12-05 03:03:58 - AIClipper - [32mINFO[0m - Scoring candidates with AI...
+2025-12-05 03:04:34 - AIClipper - [32mINFO[0m - Scoring candidate 5/26...
+2025-12-05 03:05:14 - AIClipper - [32mINFO[0m - Scoring candidate 10/26...
+2025-12-05 03:05:54 - AIClipper - [32mINFO[0m - Scoring candidate 15/26...
+2025-12-05 03:06:34 - AIClipper - [32mINFO[0m - Scoring candidate 20/26...
+2025-12-05 03:07:14 - AIClipper - [32mINFO[0m - Scoring candidate 25/26...
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Candidate scoring complete
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Step 4/8: Selecting best clips...
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selecting best clips with improved algorithm...
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Found 5 viral clips, 21 good clips
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 129.5s - 174.6s (score: 78.4)
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 18.7s - 69.1s (score: 71.1)
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selected clip: 198.6s - 231.6s (score: 62.1)
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selected 3 clips total
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Selected 3 clips
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Step 5/8: Cutting and editing videos...
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Processing clip 1/3...
+2025-12-05 03:07:30 - AIClipper - [32mINFO[0m - Cutting clip 1: 18.7s - 69.1s
+2025-12-05 03:07:48 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_030127\clip_01_shorts_raw.mp4
+2025-12-05 03:08:04 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_030127\clip_01_youtube_raw.mp4
+2025-12-05 03:08:04 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_030127\clip_01.srt
+2025-12-05 03:08:04 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_01.srt
+2025-12-05 03:08:35 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_01_shorts_final.mp4
+2025-12-05 03:08:35 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_01.srt
+2025-12-05 03:09:01 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_01_youtube_final.mp4
+2025-12-05 03:09:01 - AIClipper - [32mINFO[0m - Processing clip 2/3...
+2025-12-05 03:09:01 - AIClipper - [32mINFO[0m - Cutting clip 2: 129.5s - 174.6s
+2025-12-05 03:09:18 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_030127\clip_02_shorts_raw.mp4
+2025-12-05 03:09:33 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_030127\clip_02_youtube_raw.mp4
+2025-12-05 03:09:33 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_030127\clip_02.srt
+2025-12-05 03:09:33 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_02.srt
+2025-12-05 03:10:23 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_02_shorts_final.mp4
+2025-12-05 03:10:23 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_02.srt
+2025-12-05 03:11:13 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_02_youtube_final.mp4
+2025-12-05 03:11:13 - AIClipper - [32mINFO[0m - Processing clip 3/3...
+2025-12-05 03:11:13 - AIClipper - [32mINFO[0m - Cutting clip 3: 198.6s - 231.6s
+2025-12-05 03:12:02 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_030127\clip_03_shorts_raw.mp4
+2025-12-05 03:12:43 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_030127\clip_03_youtube_raw.mp4
+2025-12-05 03:12:43 - AIClipper - [32mINFO[0m - SRT file generated: ./output\saya_20251205_030127\clip_03.srt
+2025-12-05 03:12:43 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_03.srt
+2025-12-05 03:13:25 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_03_shorts_final.mp4
+2025-12-05 03:13:25 - AIClipper - [32mINFO[0m - Burning subtitles: ./output\saya_20251205_030127\clip_03.srt
+2025-12-05 03:14:02 - AIClipper - [32mINFO[0m - Subtitles burned: ./output\saya_20251205_030127\clip_03_youtube_final.mp4
+2025-12-05 03:14:02 - AIClipper - [32mINFO[0m - Step 6/8: Generating captions, titles, and hashtags...
+2025-12-05 03:14:02 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 03:15:04 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 03:15:59 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 03:15:59 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 03:17:00 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - Step 7/8: Saving metadata...
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - Step 8/8: Preparing upload configurations...
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - Preparing upload configurations...
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - ✅ Upload configurations saved: ./output\saya_20251205_030127\upload_configs.json
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - PROCESSING COMPLETE!
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - Output saved to: ./output\saya_20251205_030127
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - Clips generated: 3
+2025-12-05 03:17:00 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 12:53:25 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 12:53:30 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 12:53:30 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 12:53:30 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 12:53:30 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Processing video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Validating input video: C:\Users\Pongo\Downloads\saya.mp4
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_125341
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 12:53:41 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 12:53:42 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 12:53:42 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 12:53:42 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 12:53:42 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Transcription complete: 56 segments
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Detected language: id (prob: 0.98)
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - JSON saved: ./output\saya_20251205_125341\transcript.json
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Transcript saved to: ./output\saya_20251205_125341\transcript.json
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Step 3/8: Analyzing content with AI...
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Generating candidate clips...
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Generated 43 candidate clips
+2025-12-05 12:58:06 - AIClipper - [32mINFO[0m - Scoring candidates with AI...
+2025-12-05 12:58:16 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C704AF8350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:58:20 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C750A71A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:58:24 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C750A73C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:58:28 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C750A7DAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:58:28 - AIClipper - [32mINFO[0m - Scoring candidate 5/43...
+2025-12-05 12:58:33 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C750A7F8D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:58:37 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C750A73810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:59:23 - AIClipper - [32mINFO[0m - Scoring candidate 10/43...
+2025-12-05 13:00:34 - AIClipper - [32mINFO[0m - Scoring candidate 15/43...
+2025-12-05 13:01:31 - AIClipper - [32mINFO[0m - Scoring candidate 20/43...
+2025-12-05 13:02:48 - AIClipper - [33mWARNING[0m - Error in LLM scoring: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 13:02:48 - AIClipper - [32mINFO[0m - Scoring candidate 25/43...
+2025-12-05 13:03:47 - AIClipper - [32mINFO[0m - Scoring candidate 30/43...
+2025-12-05 13:04:45 - AIClipper - [32mINFO[0m - Scoring candidate 35/43...
+2025-12-05 13:05:41 - AIClipper - [32mINFO[0m - Scoring candidate 40/43...
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Candidate scoring complete
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Step 4/8: Selecting best clips...
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selecting best clips with improved algorithm...
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Found 5 viral clips, 38 good clips
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 169.4s - 215.7s (score: 77.9)
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 110.5s - 159.2s (score: 76.7)
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selected clip: 49.2s - 99.5s (score: 49.9)
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selected 3 clips total
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Selected 3 clips
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Step 5/8: Cutting and editing videos...
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Processing clip 1/3...
+2025-12-05 13:06:27 - AIClipper - [32mINFO[0m - Cutting clip 1: 49.2s - 99.5s
+2025-12-05 13:07:16 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_125341\clip_01_shorts_raw.mp4
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_125341\clip_01_youtube_raw.mp4
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 1...
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_01_shorts.ass
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_01_youtube.ass
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_125341\clip_01_simple.srt
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 1...
+2025-12-05 13:07:58 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_01_shorts.ass
+2025-12-05 13:08:44 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_01_shorts_final.mp4
+2025-12-05 13:08:44 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_01_youtube.ass
+2025-12-05 13:09:22 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_01_youtube_final.mp4
+2025-12-05 13:09:22 - AIClipper - [32mINFO[0m - Processing clip 2/3...
+2025-12-05 13:09:22 - AIClipper - [32mINFO[0m - Cutting clip 2: 110.5s - 159.2s
+2025-12-05 13:10:13 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_125341\clip_02_shorts_raw.mp4
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_125341\clip_02_youtube_raw.mp4
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 2...
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_02_shorts.ass
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_02_youtube.ass
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_125341\clip_02_simple.srt
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 2...
+2025-12-05 13:10:55 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_02_shorts.ass
+2025-12-05 13:11:41 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_02_shorts_final.mp4
+2025-12-05 13:11:41 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_02_youtube.ass
+2025-12-05 13:12:19 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_02_youtube_final.mp4
+2025-12-05 13:12:19 - AIClipper - [32mINFO[0m - Processing clip 3/3...
+2025-12-05 13:12:19 - AIClipper - [32mINFO[0m - Cutting clip 3: 169.4s - 215.7s
+2025-12-05 13:13:06 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_125341\clip_03_shorts_raw.mp4
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_125341\clip_03_youtube_raw.mp4
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 3...
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_03_shorts.ass
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_125341\clip_03_youtube.ass
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_125341\clip_03_simple.srt
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 3...
+2025-12-05 13:13:45 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_03_shorts.ass
+2025-12-05 13:14:28 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_03_shorts_final.mp4
+2025-12-05 13:14:28 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_125341\clip_03_youtube.ass
+2025-12-05 13:15:04 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_125341\clip_03_youtube_final.mp4
+2025-12-05 13:15:04 - AIClipper - [32mINFO[0m - Step 6/8: Generating captions, titles, and hashtags...
+2025-12-05 13:15:04 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 13:16:10 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 13:16:10 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 13:17:17 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 13:17:17 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 13:18:20 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - Step 7/8: Saving metadata...
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - Step 8/8: Preparing upload configurations...
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - Preparing upload configurations...
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - ✅ Upload configurations saved: ./output\saya_20251205_125341\upload_configs.json
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - PROCESSING COMPLETE!
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - Output saved to: ./output\saya_20251205_125341
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - Clips generated: 3
+2025-12-05 13:18:20 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 13:27:08 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 13:27:09 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 13:27:09 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 13:27:09 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 13:27:09 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 13:27:13 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 13:27:13 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 13:27:13 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 13:27:13 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 13:27:16 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 13:27:16 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 13:30:34 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 13:30:39 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 13:30:39 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 13:30:39 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 13:30:39 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 13:30:42 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 13:30:42 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 13:38:47 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 13:38:51 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 13:38:51 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 13:38:51 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 13:38:51 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 13:38:55 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 13:38:55 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - Processing video: C:/Users/Pongo/Downloads/saya.mp4
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - Validating input video: C:/Users/Pongo/Downloads/saya.mp4
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - [OK] Video validation passed
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - Output directory: ./output\saya_20251205_133911
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - Step 1/8: Extracting audio...
+2025-12-05 13:39:11 - AIClipper - [32mINFO[0m - Extracting audio to: ./temp\saya_audio.wav
+2025-12-05 13:39:12 - AIClipper - [32mINFO[0m - Audio extraction complete
+2025-12-05 13:39:12 - AIClipper - [32mINFO[0m - Step 2/8: Transcribing audio...
+2025-12-05 13:39:12 - AIClipper - [32mINFO[0m - Starting transcription for: ./temp\saya_audio.wav
+2025-12-05 13:39:12 - AIClipper - [32mINFO[0m - Audio file validated: ./temp\saya_audio.wav (7.09 MB)
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Transcription complete: 56 segments
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Detected language: id (prob: 0.98)
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - JSON saved: ./output\saya_20251205_133911\transcript.json
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Transcript saved to: ./output\saya_20251205_133911\transcript.json
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Step 3/8: Analyzing content with AI...
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Generating candidate clips...
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Generated 43 candidate clips
+2025-12-05 13:43:04 - AIClipper - [32mINFO[0m - Scoring candidates with AI...
+2025-12-05 13:43:54 - AIClipper - [32mINFO[0m - Scoring candidate 5/43...
+2025-12-05 13:44:52 - AIClipper - [32mINFO[0m - Scoring candidate 10/43...
+2025-12-05 13:45:51 - AIClipper - [32mINFO[0m - Scoring candidate 15/43...
+2025-12-05 13:46:49 - AIClipper - [32mINFO[0m - Scoring candidate 20/43...
+2025-12-05 13:47:48 - AIClipper - [32mINFO[0m - Scoring candidate 25/43...
+2025-12-05 13:48:46 - AIClipper - [32mINFO[0m - Scoring candidate 30/43...
+2025-12-05 13:49:45 - AIClipper - [32mINFO[0m - Scoring candidate 35/43...
+2025-12-05 13:50:42 - AIClipper - [32mINFO[0m - Scoring candidate 40/43...
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Candidate scoring complete
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Step 4/8: Selecting best clips...
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selecting best clips with improved algorithm...
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Found 3 viral clips, 40 good clips
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 110.5s - 159.2s (score: 76.1)
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selected VIRAL clip: 9.4s - 57.8s (score: 70.8)
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selected clip: 169.4s - 216.2s (score: 68.9)
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selected 3 clips total
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Selected 3 clips
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Step 5/8: Cutting and editing videos...
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Processing clip 1/3...
+2025-12-05 13:51:26 - AIClipper - [32mINFO[0m - Cutting clip 1: 9.4s - 57.8s
+2025-12-05 13:52:15 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_133911\clip_01_shorts_raw.mp4
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_133911\clip_01_youtube_raw.mp4
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 1...
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_01_shorts.ass
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_01_youtube.ass
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_133911\clip_01_simple.srt
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 1...
+2025-12-05 13:52:57 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_01_shorts.ass
+2025-12-05 13:53:42 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_01_shorts_final.mp4
+2025-12-05 13:53:42 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_01_youtube.ass
+2025-12-05 13:54:20 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_01_youtube_final.mp4
+2025-12-05 13:54:20 - AIClipper - [32mINFO[0m - Processing clip 2/3...
+2025-12-05 13:54:20 - AIClipper - [32mINFO[0m - Cutting clip 2: 110.5s - 159.2s
+2025-12-05 13:55:11 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_133911\clip_02_shorts_raw.mp4
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_133911\clip_02_youtube_raw.mp4
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 2...
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_02_shorts.ass
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_02_youtube.ass
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_133911\clip_02_simple.srt
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 2...
+2025-12-05 13:55:53 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_02_shorts.ass
+2025-12-05 13:56:39 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_02_shorts_final.mp4
+2025-12-05 13:56:39 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_02_youtube.ass
+2025-12-05 13:57:18 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_02_youtube_final.mp4
+2025-12-05 13:57:18 - AIClipper - [32mINFO[0m - Processing clip 3/3...
+2025-12-05 13:57:18 - AIClipper - [32mINFO[0m - Cutting clip 3: 169.4s - 216.2s
+2025-12-05 13:58:07 - AIClipper - [32mINFO[0m - Created shorts version: ./output\saya_20251205_133911\clip_03_shorts_raw.mp4
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m - Created youtube version: ./output\saya_20251205_133911\clip_03_youtube_raw.mp4
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m -   Generating modern subtitles for clip 3...
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_03_shorts.ass
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m - Modern ASS subtitle generated: ./output\saya_20251205_133911\clip_03_youtube.ass
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m - Simple SRT subtitle generated: ./output\saya_20251205_133911\clip_03_simple.srt
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m -   Burning subtitles for clip 3...
+2025-12-05 13:58:46 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_03_shorts.ass
+2025-12-05 13:59:30 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_03_shorts_final.mp4
+2025-12-05 13:59:30 - AIClipper - [32mINFO[0m - Burning ASS subtitles: ./output\saya_20251205_133911\clip_03_youtube.ass
+2025-12-05 14:00:07 - AIClipper - [32mINFO[0m - ASS subtitles burned: ./output\saya_20251205_133911\clip_03_youtube_final.mp4
+2025-12-05 14:00:07 - AIClipper - [32mINFO[0m - Step 6/8: Generating captions, titles, and hashtags...
+2025-12-05 14:00:07 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 14:01:18 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 14:01:18 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 14:02:23 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 14:02:23 - AIClipper - [32mINFO[0m - Generating content...
+2025-12-05 14:03:29 - AIClipper - [33mWARNING[0m - Error calling LLM: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - Step 7/8: Saving metadata...
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - Step 8/8: Preparing upload configurations...
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - Preparing upload configurations...
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - ✅ Upload configurations saved: ./output\saya_20251205_133911\upload_configs.json
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - PROCESSING COMPLETE!
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - Output saved to: ./output\saya_20251205_133911
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - Clips generated: 3
+2025-12-05 14:03:29 - AIClipper - [32mINFO[0m - ============================================================
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - Initializing Whisper model...
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - [OK] Added CUDA path: C:\Program Files\NVIDIA\CUDNN\v9.16\bin
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - [OK] CUDA environment setup complete (2 paths)
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - CUDA Version: 12.1
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - cuDNN Version: 90100
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - GPU Device: NVIDIA GeForce RTX 2050
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - GPU Memory: 4.00 GB
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - [OK] CUDA available, using GPU
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - Loading Whisper model: large-v3
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - Device: cuda
+2025-12-05 14:05:55 - AIClipper - [32mINFO[0m - Compute type: float16
+2025-12-05 14:06:02 - AIClipper - [32mINFO[0m - Model loaded successfully
+2025-12-05 14:06:02 - AIClipper - [32mINFO[0m - Model size: large-v3
+2025-12-05 14:06:02 - AIClipper - [32mINFO[0m - Whisper model loaded successfully
+2025-12-05 14:06:02 - AIClipper - [32mINFO[0m - Loading embedding model: all-MiniLM-L6-v2
+2025-12-05 14:06:07 - AIClipper - [32mINFO[0m - Embedding model loaded successfully
+2025-12-05 14:06:07 - AIClipper - [32mINFO[0m - AI Clipper initialized successfully

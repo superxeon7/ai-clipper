@@ -14,7 +14,7 @@ from modules.ai_analyzer import AIAnalyzer
 from modules.clip_selector import ClipSelector
 from modules.video_editor import VideoEditor
 from modules.content_generator import ContentGenerator
-from modules.subtitle_generator import SubtitleGenerator
+from modules.subtitle_generator_modern import ModernSubtitleGenerator
 from modules.uploader import Uploader
 from utils.logger import setup_logger
 from utils.validators import validate_input_video
@@ -39,7 +39,7 @@ class AIClipper:
         self.clip_selector = ClipSelector(self.config, self.logger)
         self.video_editor = VideoEditor(self.config, self.logger)
         self.content_generator = ContentGenerator(self.config, self.logger)
-        self.subtitle_generator = SubtitleGenerator(self.config, self.logger)
+        self.subtitle_generator = ModernSubtitleGenerator(self.config, self.logger)
         self.uploader = Uploader(self.config, self.logger)
         
         self.logger.info("AI Clipper initialized successfully")
@@ -107,7 +107,7 @@ class AIClipper:
             
             self.logger.info(f"Selected {len(selected_clips)} clips")
             
-            # Step 7: Cut and edit videos
+            # Step 7: Cut and edit videos with MODERN SUBTITLES
             self.logger.info("Step 5/8: Cutting and editing videos...")
             edited_clips = []
             
@@ -123,24 +123,45 @@ class AIClipper:
                     clip_index=idx
                 )
                 
-                # Generate subtitles
+                # Generate clip transcript
                 clip_transcript = self._extract_clip_transcript(
                     transcript, 
                     clip['start_time'], 
                     clip['end_time']
                 )
-                srt_path = self.subtitle_generator.generate_srt(
+                
+                # Generate MODERN ANIMATED subtitles for each format
+                self.logger.info(f"  Generating modern subtitles for clip {idx}...")
+                subtitle_paths = {}
+                
+                for format_name in clip_paths.keys():
+                    # Generate ASS subtitle (animated with karaoke effect)
+                    ass_path = self.subtitle_generator.generate_animated_ass(
+                        clip_transcript,
+                        output_dir,
+                        clip_index=idx,
+                        video_format=format_name
+                    )
+                    subtitle_paths[format_name] = ass_path
+                
+                # Also generate simple SRT (fallback for compatibility)
+                srt_path = self.subtitle_generator.generate_simple_srt(
                     clip_transcript,
                     output_dir,
                     clip_index=idx
                 )
                 
                 # Burn subtitles into video
+                self.logger.info(f"  Burning subtitles for clip {idx}...")
                 final_paths = {}
+                
                 for format_name, clip_path in clip_paths.items():
-                    subtitled_path = self.video_editor.burn_subtitles(
+                    ass_path = subtitle_paths[format_name]
+                    
+                    # Use ASS subtitle (supports animations)
+                    subtitled_path = self.video_editor.burn_subtitles_ass(
                         clip_path,
-                        srt_path,
+                        ass_path,
                         format_name
                     )
                     final_paths[format_name] = subtitled_path
@@ -148,7 +169,8 @@ class AIClipper:
                 edited_clips.append({
                     'index': idx,
                     'paths': final_paths,
-                    'srt_path': srt_path,
+                    'subtitle_ass': subtitle_paths,
+                    'subtitle_srt': srt_path,
                     'clip_data': clip
                 })
             
@@ -215,6 +237,18 @@ class AIClipper:
                 adjusted_segment = segment.copy()
                 adjusted_segment['start'] = max(0, seg_start - start_time)
                 adjusted_segment['end'] = min(end_time - start_time, seg_end - start_time)
+                
+                # Adjust word timestamps if available
+                if 'words' in adjusted_segment and adjusted_segment['words']:
+                    adjusted_words = []
+                    for word in adjusted_segment['words']:
+                        if word['end'] >= start_time and word['start'] <= end_time:
+                            adjusted_word = word.copy()
+                            adjusted_word['start'] = max(0, word['start'] - start_time)
+                            adjusted_word['end'] = min(end_time - start_time, word['end'] - start_time)
+                            adjusted_words.append(adjusted_word)
+                    adjusted_segment['words'] = adjusted_words
+                
                 clip_segments.append(adjusted_segment)
         
         return clip_segments
@@ -222,8 +256,28 @@ class AIClipper:
     def _save_metadata(self, clips: List[Dict], output_path: str):
         """Save metadata to JSON file."""
         import json
+        
+        # Convert to JSON-serializable format
+        serializable_clips = []
+        for clip in clips:
+            serializable_clip = {
+                'index': clip['index'],
+                'paths': clip['paths'],
+                'subtitle_ass': clip['subtitle_ass'],
+                'subtitle_srt': clip['subtitle_srt'],
+                'content': clip.get('content', {}),
+                'clip_data': {
+                    'start_time': clip['clip_data']['start_time'],
+                    'end_time': clip['clip_data']['end_time'],
+                    'duration': clip['clip_data']['duration'],
+                    'text': clip['clip_data']['text'],
+                    'scores': clip['clip_data'].get('scores', {})
+                }
+            }
+            serializable_clips.append(serializable_clip)
+        
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(clips, f, indent=2, ensure_ascii=False)
+            json.dump(serializable_clips, f, indent=2, ensure_ascii=False)
     
     def _write_summary(self, summary: Dict, output_path: str):
         """Write human-readable summary file."""
@@ -242,17 +296,29 @@ class AIClipper:
             
             for clip in summary['clips']:
                 idx = clip['index']
-                content = clip['content']
+                content = clip.get('content', {})
                 
                 f.write(f"CLIP #{idx}\n")
-                f.write(f"  Title: {content['title']}\n")
-                f.write(f"  Caption: {content['caption']}\n")
-                f.write(f"  Hashtags: {' '.join(content['hashtags'])}\n")
+                f.write(f"  Title: {content.get('title', 'N/A')}\n")
+                f.write(f"  Caption: {content.get('caption', 'N/A')}\n")
+                f.write(f"  Hashtags: {' '.join(content.get('hashtags', []))}\n")
                 f.write(f"  Files:\n")
                 for format_name, path in clip['paths'].items():
                     f.write(f"    - {format_name}: {path}\n")
-                f.write(f"  Subtitle: {clip['srt_path']}\n")
+                f.write(f"  Subtitles:\n")
+                for format_name, ass_path in clip['subtitle_ass'].items():
+                    f.write(f"    - ASS ({format_name}): {ass_path}\n")
+                f.write(f"    - SRT (simple): {clip['subtitle_srt']}\n")
                 f.write("\n")
+            
+            f.write("-" * 70 + "\n")
+            f.write("SUBTITLE FEATURES\n")
+            f.write("-" * 70 + "\n")
+            f.write("+ Modern animated subtitles with karaoke effect\n")
+            f.write("+ Word-by-word highlighting (active word = purple)\n")
+            f.write("+ 2-3 words per line for readability\n")
+            f.write("+ Smart word grouping with punctuation detection\n")
+            f.write("+ Optimized for both Shorts (9:16) and YouTube (16:9)\n\n")
             
             f.write("-" * 70 + "\n")
             f.write("NEXT STEPS\n")
@@ -289,11 +355,20 @@ def main():
     result = clipper.process_video(args.video, args.output)
     
     if result['success']:
-        print("\n✅ Processing completed successfully!")
-        print(f"📁 Output directory: {result['output_directory']}")
+        print("\n" + "="*60)
+        print("SUCCESS! Processing completed successfully!")
+        print("="*60)
+        print(f"\nOutput directory: {result['output_directory']}")
+        print(f"Clips generated: {result['clips_generated']}")
+        print(f"\nFeatures:")
+        print("  + Modern animated subtitles")
+        print("  + Word-by-word purple highlighting")
+        print("  + 2-3 words per line")
+        print("  + Optimized for viral content")
+        print("\n" + "="*60)
         sys.exit(0)
     else:
-        print(f"\n❌ Processing failed: {result.get('error', 'Unknown error')}")
+        print(f"\nERROR: Processing failed: {result.get('error', 'Unknown error')}")
         sys.exit(1)
 
 
